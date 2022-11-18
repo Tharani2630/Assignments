@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Drag and Drop</title>
+ 
+  <style>
+    body {
+ 
+  background: white;
+  
+  
+}
+
+.fill {
+  background-image: url('data:image/jpeg;base64,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');
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.empty {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 3px black;
+  background: white;
+
+}
+
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+  </style>
+</head>
+ 
+<body>
+    <div class="empty1"></div>
+    <h1>Drag and drop</h1>
+    <h3>Drag cat between these two elements</h3>
+    <br><br>
+<div class="empty">
+    <div class="fill" draggable="true"> </div>
+  </div>
+
+  <div class="empty">
+  </div>
+
+
+
+  
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+  </html>

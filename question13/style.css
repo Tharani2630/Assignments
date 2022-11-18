@@ -1,0 +1,88 @@
+body > table{
+    width: 80%;
+
+}
+body{
+   
+    border: 1px solid #888888;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+}
+table.list{
+    width:50%;
+}
+
+td, th {
+    border: 1px solid #888888;
+  text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 10%;
+    background-color:green;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: left;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+button{
+    color: white;
+    background-color: #0000ee;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+#button1{
+    color: white;
+    background-color: #0000ee;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}
+#button2{
+
+ color: white;
+    background-color:red;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+}

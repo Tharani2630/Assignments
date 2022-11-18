@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Remove HTML Table Selected Row</title>
+    <meta charset="windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button1 {
+            background-color: red;
+            border: 3px;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="table" rules="rows" style="margin-left: auto; margin-right:auto">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>Amit Sarna</td>
+            <td>Male</td>
+            <td>Navi Mumbai</td>
+            <td><button class="button1">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>David Miller</td>
+            <td>Male</td>
+            <td>Scouthe</td>
+            <td><button class="button1">Delete</button></td>
+        </tr>
+    </table>
+
+    <script>
+
+        var index, table = document.getElementById('table');
+        for (var i = 1; i < table.rows.length; i++) {
+            table.rows[i].cells[3].onclick = function () {
+
+                index = this.parentElement.rowIndex;
+                table.deleteRow(index);
+
+
+
+            };
+
+        }
+
+    </script>
+
+</body>
+
+</html>
